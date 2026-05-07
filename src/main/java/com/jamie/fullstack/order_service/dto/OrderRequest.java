@@ -1,4 +1,4 @@
-package com.jamie.fullstack.order_service.service.dto;
+package com.jamie.fullstack.order_service.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

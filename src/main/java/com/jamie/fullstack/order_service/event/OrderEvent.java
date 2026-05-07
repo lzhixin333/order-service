@@ -1,4 +1,4 @@
-package com.jamie.fullstack.order_service.service.event;
+package com.jamie.fullstack.order_service.event;
 
 import lombok.*;
 
