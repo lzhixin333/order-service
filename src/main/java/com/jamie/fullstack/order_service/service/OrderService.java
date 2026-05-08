@@ -32,7 +32,7 @@ public class OrderService {
         log.info("Order {} saved to DB", order.getId());
         
         // Prepare and Send Kafka Event
-        OrderEvent event= new OrderEvent(order.getId(), order.getProductId(), order.getQuantity(), order.getPrice(), order.getStatus().name());
+        OrderEvent event= new OrderEvent(order.getId(), order.getProductId(), order.getQuantity(), order.getPrice(), order.getStatus());
         kafkaTemplate.send("order-topic", event);
         log.info("Order event send to Kafka for ID: {}", order.getId());
 

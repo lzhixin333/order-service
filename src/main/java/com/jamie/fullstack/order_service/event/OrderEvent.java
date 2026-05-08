@@ -1,5 +1,6 @@
 package com.jamie.fullstack.order_service.event;
 
+import com.jamie.fullstack.order_service.model.OrderStatus;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -12,5 +13,5 @@ public class OrderEvent {
     private String productId;
     private Integer quantity;
     private BigDecimal price;
-    private String status;
+    private OrderStatus status;
 }
